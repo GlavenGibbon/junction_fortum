@@ -1,0 +1,18 @@
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  external_dir: data/external
+
+training:
+  random_seed: 42
+  test_size: 0.2
+  target: energy_consumption
+  model:
+    type: xgboost
+    params:
+      n_estimators: 100
+      max_depth: 6
+
+logging:
+  mlflow_tracking_uri: sqlite:///mlflow.db
+  experiment_name: energy-consumption
