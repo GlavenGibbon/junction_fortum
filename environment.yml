@@ -13,6 +13,7 @@ dependencies:
   - matplotlib
   - seaborn
   - jupyterlab
+  - openpyxl
   - mlflow
   - joblib
   - pyyaml
